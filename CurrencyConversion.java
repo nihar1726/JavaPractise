@@ -7,6 +7,11 @@ public class CurrencyConversion {
         double eurAmount = usdAmount * conversionRateUsdEur;
         System.out.println(usdAmount + " USD is equal to " + eurAmount + " EUR");
 
+        double expenditureInEur = 50.0; // Expenditure in EUR
+        // Deduct expenditure from EUR amount
+        eurAmount -= expenditureInEur;
+        System.out.println("After spending " + expenditureInEur + " EUR, remaining amount is: " + eurAmount + " EUR");
+
         // Convert EUR back to USD
         double convertedBackToUsd = eurAmount / conversionRateUsdEur;
         System.out.println(eurAmount + " EUR is equal to " + convertedBackToUsd + " USD");
